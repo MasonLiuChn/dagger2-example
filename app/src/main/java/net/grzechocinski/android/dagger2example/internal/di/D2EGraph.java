@@ -5,7 +5,7 @@ import net.grzechocinski.android.dagger2example.home.HomeActivity;
 import net.grzechocinski.android.dagger2example.utils.D2ECollectionUtils;
 
 public interface D2EGraph {
-
+    //这里是Injector
     void inject(D2EApplication app);
 
     void inject(HomeActivity app);

@@ -2,13 +2,19 @@ package net.grzechocinski.android.dagger2example;
 
 import android.app.Application;
 import android.content.Context;
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
-import net.grzechocinski.android.dagger2example.internal.di.D2EComponent;
 
+import net.grzechocinski.android.dagger2example.internal.di.D2EComponent;
 import net.grzechocinski.android.dagger2example.internal.di.DaggerD2EComponent;
 import net.grzechocinski.android.dagger2example.internal.di.SystemServicesModule;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+/**
+ * Component 是连接 Provider(提供者) 和 Injector(使用者)，然后由Injector返回Provider提供的实例。
+ * dagger2 生成的代码有 Component 、Provider、Injector。
+ * module 是 Provider 的集合。
+ **/
 public abstract class D2EBaseApplication extends Application {
 
     private D2EComponent component;
