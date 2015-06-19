@@ -1,7 +1,8 @@
 package net.grzechocinski.android.dagger2example.internal.di;
 
-import dagger.Component;
 import javax.inject.Singleton;
+
+import dagger.Component;
 
 /**
  * This class is in release/ folder. You can use it to define injects or getters for dependencies only in release variant
