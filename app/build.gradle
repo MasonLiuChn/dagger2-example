@@ -14,6 +14,10 @@ android {
         versionName "dev"
     }
 
+    lintOptions {
+        abortOnError false
+    }
+    
     //lambda用到
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
